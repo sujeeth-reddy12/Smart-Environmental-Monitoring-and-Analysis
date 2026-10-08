@@ -1,0 +1,126 @@
+.rankings-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.rankings-header-banner {
+  background: linear-gradient(135deg, #0d1726 0%, #1e293b 100%);
+  color: #ffffff;
+  border-radius: 0.85rem;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.rankings-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #f59e0b;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.rankings-header-text h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.rankings-header-text p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.rankings-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.rankings-col-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.icon-green { color: #10b981; }
+.icon-amber { color: #f59e0b; }
+
+.rank-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.rank-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.4rem;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.rank-card-row--clean {
+  border-left: 4px solid #10b981;
+}
+
+.rank-card-row--polluted {
+  border-left: 4px solid #ef4444;
+}
+
+.rank-badge {
+  font-size: 0.85rem;
+  font-weight: 800;
+  width: 32px;
+}
+
+.rank-badge--clean { color: #10b981; }
+.rank-badge--polluted { color: #ef4444; }
+
+.rank-city-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rank-city-info strong {
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+.rank-city-info small {
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.rank-score-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.rank-score-val {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #15803d;
+}
+
+.rank-aqi-val {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #b91c1c;
+}
+
+@media (max-width: 900px) {
+  .rankings-two-cols {
+    grid-template-columns: 1fr;
+  }
+}

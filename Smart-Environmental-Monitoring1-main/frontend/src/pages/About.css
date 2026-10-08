@@ -1,0 +1,220 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 100%;
+}
+
+.about-hero {
+  width: 100%;
+  background: linear-gradient(135deg, #0f4c81 0%, #2f7dbb 55%, #3e9bd8 100%);
+  color: #ffffff;
+  border-radius: 1.8rem;
+  padding: 3rem 2.25rem;
+  box-shadow: 0 24px 50px rgba(15, 76, 129, 0.16);
+  display: flex;
+  justify-content: center;
+}
+
+.about-hero__content {
+  max-width: 860px;
+  text-align: center;
+}
+
+.about-hero__eyebrow {
+  display: inline-block;
+  margin: 0 0 0.7rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.about-hero__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  line-height: 1.1;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.about-hero__subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-section {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(15, 76, 129, 0.08);
+  border-radius: 1.35rem;
+  padding: 1.4rem;
+  box-shadow: 0 20px 40px rgba(15, 76, 129, 0.08);
+}
+
+.about-section__header {
+  margin-bottom: 1rem;
+}
+
+.about-section__title {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+  color: #12324a;
+}
+
+.about-section__text {
+  margin: 0;
+  color: #5d6f7f;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.about-card {
+  background: linear-gradient(180deg, #f9fcff 0%, #f3f9ff 100%);
+  border: 1px solid rgba(15, 76, 129, 0.08);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  min-height: 100%;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 28px rgba(15, 76, 129, 0.12);
+}
+
+.about-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 0.9rem;
+  background: rgba(47, 125, 187, 0.14);
+  color: #0f4c81;
+  font-size: 1.1rem;
+}
+
+.about-card__title {
+  margin: 0;
+  font-size: 1rem;
+  color: #12324a;
+}
+
+.about-card__description,
+.about-card__meta {
+  margin: 0;
+  color: #5d6f7f;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.about-tech-group {
+  background: linear-gradient(180deg, #fbfdff 0%, #f3f8ff 100%);
+  border: 1px solid rgba(15, 76, 129, 0.08);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.about-tech-group__title {
+  margin: 0;
+  color: #0f4c81;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.about-tech-group__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.about-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(47, 125, 187, 0.1);
+  color: #0f4c81;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.about-team-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: linear-gradient(180deg, #fdfefe 0%, #f4faff 100%);
+  border: 1px solid rgba(15, 76, 129, 0.08);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.about-team-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(15, 76, 129, 0.1);
+}
+
+.about-team-avatar {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f4c81, #3e9bd8);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.about-team-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.about-team-name {
+  margin: 0;
+  color: #12324a;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.about-team-role {
+  margin: 0;
+  color: #5d6f7f;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 760px) {
+  .about-hero {
+    padding: 2.2rem 1.2rem;
+    border-radius: 1.3rem;
+  }
+
+  .about-section {
+    padding: 1.1rem;
+  }
+}

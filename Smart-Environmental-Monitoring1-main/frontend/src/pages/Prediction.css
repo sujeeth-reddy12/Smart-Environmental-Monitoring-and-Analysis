@@ -1,0 +1,177 @@
+.pred-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.pred-header-banner {
+  background: linear-gradient(135deg, #0d1726 0%, #1e293b 100%);
+  color: #ffffff;
+  border-radius: 0.85rem;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+}
+
+.pred-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #60a5fa;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.pred-header-text h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pred-header-text p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.pred-search-bar {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.3rem 0.3rem 0.85rem;
+  min-width: 320px;
+}
+
+.pred-search-icon {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.pred-search-bar input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: 0.85rem;
+  color: #0f172a;
+}
+
+.pred-search-btn {
+  background: #2563eb;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0.38rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pred-grid-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pred-card-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.pred-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1.1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.pred-card--highlight {
+  border-color: #93c5fd;
+  background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%);
+}
+
+.pred-card-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.04em;
+}
+
+.pred-card-val-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.pred-card-num {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.pred-blue-num {
+  color: #2563eb;
+}
+
+.pred-card-sub {
+  margin: 0;
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.pred-insight-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid #2563eb;
+  padding: 0.85rem 1rem;
+  border-radius: 0.5rem;
+  color: #1e40af;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.insight-icon {
+  font-size: 1.1rem;
+  color: #2563eb;
+}
+
+.header-icon-green {
+  color: #10b981;
+  font-size: 0.95rem;
+}
+
+.health-advisory-text {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .pred-card-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

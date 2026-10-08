@@ -1,0 +1,104 @@
+.aqi-card {
+  background: #ffffff;
+  border: 1px solid #dfeefc;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 0 18px 35px rgba(15, 76, 129, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.aqi-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 45px rgba(15, 76, 129, 0.16);
+}
+
+.aqi-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.aqi-card__label {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #6b8ca7;
+}
+
+.aqi-card__city {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #153c5d;
+}
+
+.aqi-card__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.aqi-card__value {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #0f4c81;
+}
+
+.aqi-card__meta {
+  margin: 0;
+  color: #67859b;
+  font-size: 0.95rem;
+}
+
+.aqi-card--good {
+  border-color: #ccefd8;
+}
+
+.aqi-card--good .aqi-card__badge {
+  background: rgba(43, 179, 107, 0.16);
+  color: #207d48;
+}
+
+.aqi-card--moderate {
+  border-color: #f0ebc8;
+}
+
+.aqi-card--moderate .aqi-card__badge {
+  background: rgba(242, 200, 69, 0.2);
+  color: #997a05;
+}
+
+.aqi-card--poor {
+  border-color: #f6dcc3;
+}
+
+.aqi-card--poor .aqi-card__badge {
+  background: rgba(245, 145, 32, 0.2);
+  color: #b96105;
+}
+
+.aqi-card--very-poor {
+  border-color: #f4cdd0;
+}
+
+.aqi-card--very-poor .aqi-card__badge {
+  background: rgba(220, 53, 69, 0.16);
+  color: #b3242d;
+}
+
+.aqi-card--severe {
+  border-color: #d7c4ff;
+}
+
+.aqi-card--severe .aqi-card__badge {
+  background: rgba(132, 77, 255, 0.16);
+  color: #6c2edb;
+}

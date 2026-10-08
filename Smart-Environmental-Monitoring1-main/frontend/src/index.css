@@ -1,0 +1,64 @@
+:root {
+  font-family: Inter, 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background: #f4f7fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f4f7fc;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f4f7fc;
+}
+
+.app-body-layout {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
+.page-content {
+  flex: 1;
+  display: block;
+  min-width: 0;
+  padding: 1.25rem 1.5rem 3rem;
+  background: #f4f7fc;
+}
+
+.page-section {
+  width: min(100%, 1000px);
+}
+
+.page-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 900px) {
+  .page-content {
+    padding: 1rem 0.75rem 2rem;
+  }
+}
